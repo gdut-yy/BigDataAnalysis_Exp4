@@ -51,7 +51,7 @@ public class MinHash {
         return matrix;  
     }  
       
-    //行打乱  
+    // 行打乱  
     protected static String[][] rowMess(String[][] matrix){  
         int rowNumber1, rowNumber2;  
         int i, j;  
@@ -70,7 +70,7 @@ public class MinHash {
         return matrix;  
     }  
       
-    //根据最小hash值求相似度  
+    // 根据最小hash值求相似度  
     protected static double minHashJaccard(int k, Set<String> set) throws IOException{  
         Set<String> set1 = getSet(k, KShingle.str1);  
         Set<String> set2 = getSet(k, KShingle.str2);  
